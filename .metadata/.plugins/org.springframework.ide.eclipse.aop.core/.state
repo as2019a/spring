@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="ch09_AOP_D_aop">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="28" aspect-name="txAdvice" aspect-start-line-number="27" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/ch09_AOP_D_aop/src/main/resources/spring/config/root-context.xml" pointcut-expression="execution(* com.inc.service.*Service*.add*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ch09_AOP_D_aop|3:src/main/resources/spring/config/root-context.xml|7:beans:12|8:productServiceImpl:12" bean-file="/ch09_AOP_D_aop/src/main/resources/spring/config/root-context.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch09_AOP_D_aop/src/main/resources/spring/config/root-context.xml" source="=ch09_AOP_D_aop/C:\/Users\/12\/.m2\/repository\/org\/springframework\/spring-tx\/4.2.6.RELEASE\/spring-tx-4.2.6.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=ch09_AOP_D_aop/src\/main\/java&lt;com.inc.service{ProductServiceImpl.java[ProductServiceImpl~addOutput~QProduct;" target-start-line="50"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ch09_AOP_D_aop|3:src/main/resources/spring/config/root-context.xml|7:beans:12|8:productServiceImpl:12" bean-file="/ch09_AOP_D_aop/src/main/resources/spring/config/root-context.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch09_AOP_D_aop/src/main/resources/spring/config/root-context.xml" source="=ch09_AOP_D_aop/C:\/Users\/12\/.m2\/repository\/org\/springframework\/spring-tx\/4.2.6.RELEASE\/spring-tx-4.2.6.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=ch09_AOP_D_aop/src\/main\/java&lt;com.inc.service{ProductServiceImpl.java[ProductServiceImpl~addInput~QProduct;" target-start-line="33"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="ch05_@MVC_B_RequestMapping"/>
+<aop-project name="ch04_spring-web_B_architecture"/>
+<aop-project name="ch19_project_mavenwebsite"/>
+<aop-project name="ch07_maven_C_guestbook"/>
+<aop-project name="ch02_DI_I_datasource"/>
+<aop-project name="ch02_DI_J_injection-type"/>
+<aop-project name="ch12_diary"/>
+<aop-project name="ch04_spring-web_C_layer"/>
+<aop-project name="ch11_board"/>
+<aop-project name="ch06_guestbook"/>
+<aop-project name="ch04_spring-web_D_mybatis"/>
+<aop-project name="ch05_@MVC_D_PathVariable"/>
+<aop-project name="ch02_DI_M_component-scan"/>
+<aop-project name="ch09_AOP_B_code"/>
+<aop-project name="ch10_board"/>
+<aop-project name="ch09_AOP_A_none"/>
+<aop-project name="ch03_Test_E_springtest"/>
+<aop-project name="ch03_Test_C_exception"/>
+<aop-project name="ch05_@MVC_K_spring-validation"/>
+<aop-project name="ch03_Test_B_junit"/>
+<aop-project name="ch02_DI_K_autowire"/>
+<aop-project name="ch05_@MVC_E_CookieValue"/>
+<aop-project name="ch09_AOP_E_annotation">
+<aspect-definition advice-class-name="org.springframework.transaction.interceptor.TransactionInterceptor" advice-method-name="invoke" advice-method-parameter-types="org.aopalliance.intercept.MethodInvocation" advice-type="AROUND" aspect-end-line-number="14" aspect-name="org.springframework.transaction.interceptor.TransactionInterceptor#ch09_AOP_E_annotation#src/main/resources/spring/config/root-context.xml#14" aspect-start-line-number="14" factory-id="org.springframework.ide.eclipse.aop.core.javaAdvisorDefinitionElementFactory" file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" pointcut-expression="(@within(org.springframework.transaction.annotation.Transactional) || @annotation(org.springframework.transaction.annotation.Transactional)) &amp;&amp; execution(* *..*(..))" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ch09_AOP_E_annotation|3:src/main/resources/spring/config/root-context.xml|7:beans:12|8:productServiceImpl:12" bean-file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" source="=ch09_AOP_E_annotation/C:\/Users\/12\/.m2\/repository\/org\/springframework\/spring-tx\/4.2.6.RELEASE\/spring-tx-4.2.6.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=ch09_AOP_E_annotation/src\/main\/java&lt;com.inc.service{ProductServiceImpl.java[ProductServiceImpl~addInput~QProduct;" target-start-line="39"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ch09_AOP_E_annotation|3:src/main/resources/spring/config/root-context.xml|7:beans:12|8:productServiceImpl:12" bean-file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" source="=ch09_AOP_E_annotation/C:\/Users\/12\/.m2\/repository\/org\/springframework\/spring-tx\/4.2.6.RELEASE\/spring-tx-4.2.6.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=ch09_AOP_E_annotation/src\/main\/java&lt;com.inc.service{ProductServiceImpl.java[ProductServiceImpl~productMap" target-start-line="29"/>
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:ch09_AOP_E_annotation|3:src/main/resources/spring/config/root-context.xml|7:beans:12|8:productServiceImpl:12" bean-file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" bean-start-line="12" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/ch09_AOP_E_annotation/src/main/resources/spring/config/root-context.xml" source="=ch09_AOP_E_annotation/C:\/Users\/12\/.m2\/repository\/org\/springframework\/spring-tx\/4.2.6.RELEASE\/spring-tx-4.2.6.RELEASE.jar&lt;org.springframework.transaction.interceptor(TransactionInterceptor.class[TransactionInterceptor~invoke~Lorg.aopalliance.intercept.MethodInvocation;" source-start-line="-1" target="=ch09_AOP_E_annotation/src\/main\/java&lt;com.inc.service{ProductServiceImpl.java[ProductServiceImpl~addOutput~QProduct;" target-start-line="57"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="ch05_@MVC_A_architecture"/>
+<aop-project name="ch05_@MVC_C_RequestParam"/>
+<aop-project name="ch05_@MVC_J_default-servlet-handler"/>
+<aop-project name="diary"/>
+<aop-project name="ch12_springboot"/>
+<aop-project name="ch02_DI_L_autowrie-annotation"/>
+<aop-project name="ch06_guestbook-autowire"/>
+<aop-project name="ch09_AOP_C_decorate"/>
+<aop-project name="ch05_@MVC_I_SessionAttribute"/>
+<aop-project name="ch11_spring_security"/>
+<aop-project name="ch05_@MVC_H_view-resolver"/>
+<aop-project name="ch03_Test_A_main-method"/>
+<aop-project name="ch05_@MVC_G_RequestBody-ResponseBody"/>
+<aop-project name="ch05_@MVC_F_ModelAttribute"/>
+<aop-project name="ch02_DI_G_Xml"/>
+<aop-project name="ch03_Test_D_after&amp;before"/>
+</aop-reference-model>

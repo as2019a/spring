@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="product">
+	
+	<select id="inputList" resultType="Product">
+		select * from product_input order by regdate desc
+	</select>
+	
+	<select id="remainList" resultType="Product">
+		select * from product_remain order by regdate desc
+	</select>
+	
+	<select id="outputList" resultType="Product">
+		select * from product_output order by regdate desc
+	</select>
+	
+	<insert id="addInput" parameterType="Product">
+		insert into product_input values(#{name}, #{count}, sysdate)
+	</insert>
+
+	<select id="getRemain" parameterType="String"
+						   resultType="Product">
+		select * from product_remain where name = #{value}					   
+    </select>
+    
+    <update id="editRemain" parameterType="Product">
+    	update product_remain set count = #{count}
+    						  where name = #{name}
+    </update>
+    
+    <insert id="addRemain" parameterType="Product">
+    	insert into product_remain values(#{name}, #{count}, sysdate)
+    </insert>
+    
+    <insert id="addOutput" parameterType="Product">
+    	insert into product_output values(#{name}, #{count}, sysdate)
+    </insert>
+		
+</mapper>

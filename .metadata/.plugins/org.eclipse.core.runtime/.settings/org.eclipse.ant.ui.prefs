@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+org.eclipse.ant.ui.debugColor=128,255,255
+org.eclipse.ant.ui.errorColor=255,0,0
+org.eclipse.ant.ui.informationColor=88,139,190
+org.eclipse.ant.ui.verboseColor=0,255,0
+org.eclipse.ant.ui.warningColor=255,128,0
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

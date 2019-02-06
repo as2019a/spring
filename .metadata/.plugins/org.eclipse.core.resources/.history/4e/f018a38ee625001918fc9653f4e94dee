@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="address">
+	<select id="selectList" resultType="Address"
+			parameterType="Map">
+		select * from 
+			(select rownum rnum, a.* from
+				(select * from address 
+				 order by regdate desc) a)
+		where rnum between #{start} and #{end}
+	
+	</select>
+	<select id="totalCount" resultType="int">
+		select count(*) from board
+	</select>
+	
+	<insert id="insert" parameterType="Address">
+		insert into address 
+		values(
+			seq_address_id.nextval,
+			#{users_id},
+			#{title},
+			#{content},
+			0,
+			#{ip},
+			sysdate
+		)
+	</insert>
+	
+	<select id="selectOne" parameterType="int"
+			resultMap="replyListMap">
+		select * from board where id = #{value}		
+	</select>
+	
+	<resultMap id="replyListMap" type="Address">
+		<result property="id" column="id"/>
+		<collection property="replyList"
+					ofType="Reply"
+					column="id"
+					select="reply.replyList"/>
+	</resultMap>
+	
+	<update id="hitUp" parameterType="int">
+		update address 
+		set hit = hit + 1 
+		where id = #{value}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+		delete from address where id = #{value}
+	</delete>
+	
+	<update id="update" parameterType="Address">
+		update address set title = #{title}, 
+					     content = #{content}
+		where id = #{id}					     
+	</update>
+</mapper>

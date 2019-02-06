@@ -1,0 +1,71 @@
+package com.inc.domain;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
+
+public class Address {
+	
+	private String user_id;
+	@Pattern(regexp="[가-힣]{2,10}", message="한글, 2~10글자 이름을 입력하세요.")
+	private String signup_name;
+	private String signup_phone;
+	@NotNull(message="주소를 입력해 주세요")
+	private String signup_addr;
+	@Pattern(regexp="[A-Za-z0-9]{3,10}@[A-Za-z.]{3,15}",
+			message="ex)Maven@Maven.com")
+	private String signup_email;
+	@NotNull(message="성별을 입력해 주세요")
+	private String gender;
+	
+	//Maven Company 기업 내부 직원(회원) 주소록 Address는 보안체계를 도입하여
+	//관리하는 곳으로서 해당 domain에는 synchronized 동기화를 적용하여 순번대로 관리합니다.
+	public synchronized String geaztUser_id() {
+		return user_id;
+	}
+	public synchronized void setUser_id(String user_id) {
+		this.user_id = user_id;
+	}
+	public synchronized String getSignup_name() {
+		return signup_name;
+	}
+	public synchronized void setSignup_name(String signup_name) {
+		this.signup_name = signup_name;
+	}
+	public synchronized String getSignup_phone() {
+		return signup_phone;
+	}
+	public synchronized void setSignup_phone(String signup_phone) {
+		this.signup_phone = signup_phone;
+	}
+	public synchronized String getSignup_addr() {
+		return signup_addr;
+	}
+	public synchronized void setSignup_addr(String signup_addr) {
+		this.signup_addr = signup_addr;
+	}
+	public synchronized String getSignup_email() {
+		return signup_email;
+	}
+	public synchronized void setSignup_email(String signup_email) {
+		this.signup_email = signup_email;
+	}
+	public synchronized String getGender() {
+		return gender;
+	}
+	public synchronized void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	@Override
+	public String toString() {
+		return "Address [user_id=" + user_id + ", signup_name=" + signup_name + ", signup_phone=" + signup_phone
+				+ ", signup_addr=" + signup_addr + ", signup_email=" + signup_email + ", gender=" + gender
+				+ ", geaztUser_id()=" + geaztUser_id() + ", getSignup_name()=" + getSignup_name()
+				+ ", getSignup_phone()=" + getSignup_phone() + ", getSignup_addr()=" + getSignup_addr()
+				+ ", getSignup_email()=" + getSignup_email() + ", getGender()=" + getGender() + ", getClass()="
+				+ getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
+	
+	
+	
+}

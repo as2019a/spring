@@ -1,0 +1,20 @@
+cdataBorder=\#84c111 | null | false | false | false | false
+commentBorder=\#00c400 | null | false | false | false | false
+commentText=\#008400 | null | false | false | false | false
+declBoder=\#178bff | null | false | false | false | false
+doctypeExternalId=\#b65ce0 | null | false | false | false | false
+doctypeName=\#51ea5c | null | false | false | false | false
+eclipse.preferences.version=1
+entityReference=\#ff0000 | null | true | false | false | false
+newFileTemplateName=xml declaration
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.lastActivePage=1
+piContent=\#d8d9fe | null | false | false | false | false
+tagAttributeEquals=\#004040 | \#ffffff | false | false | false | false
+tagAttributeName=\#0069d2 | null | false | false | false | false
+tagAttributeValue=\#ffac84 | null | false | true | false | false
+tagBorder=\#bbbb79 | null | false | false | false | false
+tagName=\#afaf61 | null | true | false | false | false
+xmlContent=\#bed2fc | null | false | false | false | false
+xml_content_assist_default_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000
+xml_content_assist_own_page_sort_order=org.eclipse.wst.xml.ui.proposalCategory.xmlTemplates\u0000org.eclipse.wst.xml.ui.proposalCategory.xmlTags\u0000

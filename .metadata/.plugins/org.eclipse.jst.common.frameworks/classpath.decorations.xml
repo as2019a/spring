@@ -1,0 +1,15 @@
+<classpath>
+  <container id="ch04_spring-web_C_layer!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/increpas/spring/example/ch04_spring-web_C_layer/WebContent/WEB-INF/lib/commons-logging-1.2.jar">
+      <source-attachment-path>G:/sever file/util/commons-logging-1.2-src.zip</source-attachment-path>
+    </entry>
+    <entry id="C:/increpas/spring/example/ch04_spring-web_C_layer/WebContent/WEB-INF/lib/spring-web-4.2.6.RELEASE.jar">
+      <source-attachment-path>C:/increpas/spring/lib/spring-web-4.2.6.RELEASE-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+  <container id="ch04_spring-web_D_mybatis!org.eclipse.jst.j2ee.internal.web.container">
+    <entry id="C:/increpas/spring/example/ch04_spring-web_D_mybatis/WebContent/WEB-INF/lib/mybatis-spring-1.2.4.jar">
+      <source-attachment-path>C:/increpas/spring/lib/mybatis-spring-1.2.4-sources.jar</source-attachment-path>
+    </entry>
+  </container>
+</classpath>

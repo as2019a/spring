@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+org.springframework.ide.eclipse.webflow.ui.graph.org.springframework.ide.eclipse.webflow.core.internal.model.ActionState.color=128,255,0
+org.springframework.ide.eclipse.webflow.ui.graph.org.springframework.ide.eclipse.webflow.core.internal.model.DecisionState.color=255,128,64
+org.springframework.ide.eclipse.webflow.ui.graph.org.springframework.ide.eclipse.webflow.core.internal.model.EndState.color=128,128,64
+org.springframework.ide.eclipse.webflow.ui.graph.org.springframework.ide.eclipse.webflow.core.internal.model.SubflowState.color=0,255,64
+org.springframework.ide.eclipse.webflow.ui.graph.org.springframework.ide.eclipse.webflow.core.internal.model.ViewState.color=128,128,255

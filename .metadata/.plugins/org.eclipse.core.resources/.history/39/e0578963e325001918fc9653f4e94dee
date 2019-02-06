@@ -1,0 +1,45 @@
+package com.inc.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.inc.domain.Address;
+
+@Repository
+public class AddressDao {
+	
+	@Autowired
+	private SqlSession session;
+	
+	public List<Address> selectList(Map<String, Integer> map){
+		return session.selectList("address.selectList", map);
+	}
+	
+	public int getTotalCount() {
+		return session.selectOne("address.totalCount");
+	}
+	
+	public void insert(Address address) {
+		session.insert("address.insert", address);
+	}
+
+	public Address selectOne(int id) {
+		return session.selectOne("address.selectOne", id);
+	}
+
+	public void hitUp(int id) {
+		session.update("address.hitUp", id);
+	}
+
+	public void delete(int id) {
+		session.delete("address.delete", id);
+	}
+
+	public void update(Address address) {
+		session.update("address.update", address);
+	}
+}

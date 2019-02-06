@@ -1,0 +1,42 @@
+package com.inc.controller;
+
+import javax.servlet.http.HttpSession;
+
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.inc.domain.User;
+
+@Controller
+public class MainController {
+	
+	//기업페이지 메인컨트롤러
+	@RequestMapping(value= {"/","/main"}, method=RequestMethod.GET)
+	public String main(@AuthenticationPrincipal User user) {
+		System.out.println(user);
+		return "/main";
+	}
+	
+	//캘린더는 메뉴에서 삭제예정
+	/*@RequestMapping(value= {"/","/calendar"}, method=RequestMethod.GET)
+	public String calendar() {
+		return "/calendar";
+	}*/
+	
+	//address 주소록 table컨트롤러
+	@RequestMapping(value="/address", method=RequestMethod.GET)
+	public String address(HttpSession session, Model model) {
+		return "/address";
+	}
+	
+	
+	/*각 메뉴 컨트롤러(단 오라클에서 테이블 추가 및 DB불러올때는 Model로 불러오고 jsp에서는
+	 * 제이쿼리 코드를 사용하고 ${...}로 하여 DB불러와서 코드 작성
+	 */
+	
+	
+	
+}

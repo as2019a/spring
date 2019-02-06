@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+ <typeAliases>
+ 	<package name="com.inc.domain"/>
+ </typeAliases>
+  <mappers>
+    <mapper resource="mybatis/mapper/board.xml"/>
+    <!-- <mapper resource="mybatis/mapper/product.xml"/> -->
+    <mapper resource="mybatis/mapper/reply.xml"/>
+    <mapper resource="mybatis/mapper/user.xml"/>
+    <mapper resource="mybatis/mapper/signup.xml"/>
+    <mapper resource="mybatis/mapper/membership.xml"/>
+    <mapper resource="mybatis/mapper/address.xml"/>
+  </mappers>
+</configuration>

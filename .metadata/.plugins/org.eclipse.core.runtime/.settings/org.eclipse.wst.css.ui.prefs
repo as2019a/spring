@@ -1,0 +1,18 @@
+ATMARK_RULE=\#21ed2c | null | false | false | false | false
+COLON=\#993200 | null | false | false | false | false
+COMMENT=\#715359 | null | false | false | false | false
+CURLY_BRACE=\#c9d29d | null | false | false | false | false
+ERROR=\#ff0000 | null | false | false | false | false
+MEDIA=\#8080ff | null | false | false | false | false
+NORMAL=\#a0c6eb | null | false | false | false | false
+PROPERTY_NAME=\#ff5809 | null | false | false | false | false
+PROPERTY_VALUE=\#52ebcc | null | false | true | false | false
+PSEUDO=\#cc0000 | null | false | false | false | false
+SELECTOR=\#65f228 | null | true | false | false | false
+SEMI_COLON=\#bbb8f1 | null | false | false | false | false
+URI=\#2799b6 | null | false | true | false | false
+css_content_assist_default_page_sort_order=org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000
+css_content_assist_own_page_sort_order=org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000
+eclipse.preferences.version=1
+newFileTemplateName=New CSS File
+org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>

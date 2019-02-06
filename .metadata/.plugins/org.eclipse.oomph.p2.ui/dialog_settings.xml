@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="RepositoryExplorer">
+		<item value="false" key="compatibleVersion"/>
+	</section>
+	<section name="RepositoryManager">
+		<item value="file:/C:/increpas/spring/util/sts-bundle/sts-3.9.6.RELEASE/configuration/../p2/org.eclipse.equinox.p2.engine/profileRegistry/DefaultProfile.profile" key="activeRepository"/>
+		<list key="repositories">
+		</list>
+	</section>
+</section>

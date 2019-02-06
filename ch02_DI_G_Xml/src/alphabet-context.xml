@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<import resource="root-context.xml"/>
+	
+	<bean id="a" class="com.inc.alphabet.A">
+		<property name="b" ref="b"/>
+		<property name="c" ref="c"/>
+	</bean>
+	
+	<bean id="b" class="com.inc.alphabet.B">
+		<property name="c" ref="c"/>
+		<property name="d" ref="d"/>
+	</bean>
+	
+	<bean id="c" class="com.inc.alphabet.C">
+		<property name="d" ref="d"/>
+	</bean>
+	
+	<bean id="d" class="com.inc.alphabet.D"/>
+	
+</beans>

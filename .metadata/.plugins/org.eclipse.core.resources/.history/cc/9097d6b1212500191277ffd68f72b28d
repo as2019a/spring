@@ -1,0 +1,25 @@
+package com.inc.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
+
+import com.inc.dao.AddressDao;
+import com.inc.util.Pager;
+
+@Service
+@Scope("global session")
+public class AddressService {
+	
+	@Autowired
+	private AddressDao addressDao;
+	
+	public Object getPaging(int page) {
+		
+	int total = addressDao.getTotalCount();
+	return Pager.paging(page, total);
+	}
+		
+	
+	
+}

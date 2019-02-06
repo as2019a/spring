@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="injectionValueType" class="com.inc.valuetype.InjectionValueType">
+		<constructor-arg value="100"/>
+		<constructor-arg value="문자열"/>
+		<property name="map" >
+			<map>
+				<entry key="name" value="LEE" />
+				<entry key="job" value="웹디자이너" />
+			</map>
+		</property>
+		<property name="set">
+			<set>
+				<value>30</value>
+				<value>20</value>
+				<value>90</value>
+			</set>
+		</property>
+		<property name="list">
+			<list>
+				<value>100</value>
+				<value type="java.lang.Intager">100</value>
+			</list>
+		</property>
+	</bean>
+	
+</beans>

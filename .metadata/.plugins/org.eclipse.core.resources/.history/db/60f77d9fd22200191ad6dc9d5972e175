@@ -1,0 +1,20 @@
+package com.inc.controller;
+
+@RestController
+public class ImageController {
+    @Autowired
+    ImageService imageService;
+ 
+    @GetMapping(value = "/image/{imageName}.{extension}", produces = MediaType.IMAGE_PNG_VALUE)
+    public @ResponseBody byte[] getImage(
+        @PathVariable(name = "imageName") String imageName,
+        @PathVariable(name = "extension", required = false, defaultValue = "png") String extension,
+        HttpServletRequest request) throws IOException {
+        String imagePath = request.getServletContext().getRealPath("resources/image/" + imageName + "." + extension);
+        InputStream imageStream = new FileInputStream(imagePath);
+        byte[] imageByteArray = IOUtils.toByteArray(imageStream);
+        imageStream.close();
+ 
+        return imageByteArray;
+    }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	
+	<!-- defalutServlet 정적요청시 파일을 읽어서 응답하는 DefaultServlet을 부활 -->
+	<!-- <mvc:default-servlet-handler/> -->
+	<mvc:resources mapping="/css/**" location="/WEB-INF/public/css/" />
+	<!-- <mvc:resources mapping="/js/**" location="/WEB-INF/public/js" /> -->
+	<!-- @MVC를 사용하기 위한 빈들을 등록 -->
+	<mvc:annotation-driven/>
+	
+	<context:component-scan base-package="com.inc.controller" >
+		<context:exclude-filter type="regex" 
+								expression="com.inc.controller.JobController"/>
+		<context:exclude-filter type="regex" 
+								expression="com.inc.controller.DefaultServletController"/>
+	</context:component-scan>
+	
+	<!-- <context:component-scan base-package="com.inc.controller" >
+		<context:exclude-filter type="regex" 
+								expression="com.inc.controller.HelloJobController"/>
+	</context:component-scan> -->
+
+	<bean class="com.inc.controller.JobController">
+		<property name="jobMap">
+			<map>
+				<entry key="사무직">
+					<list>
+						<value>프로그래머</value>
+						<value>인사담당자</value>
+					</list>
+				</entry>
+				<entry key="현장직">
+					<list>
+						<value>공사장인부</value>
+						<value>안전요원</value>
+					</list>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+		
+	<!-- <bean class="com.inc.controller.HelloController" /> -->
+	
+	<!-- <bean name="/user/list" class="com.inc.controller.UserListController" >
+		<property name="userService" ref="userService"/>
+	</bean>
+	
+	<bean name="/user/add" class="com.inc.controller.UserAddController">
+		<property name="userService" ref="userService" />
+	</bean> -->
+	
+</beans>

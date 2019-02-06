@@ -1,0 +1,5 @@
+GitRepositoriesView.GitDirectories=C\:\\increpas\\spring\\example\\diary\\.git;
+GitRepositoriesView.GitDirectories.relative=diary\\.git;
+core_autoIgnoreDerivedResources=false
+core_preferredMergeStrategy=jgit-default-mergeStrategy
+eclipse.preferences.version=1

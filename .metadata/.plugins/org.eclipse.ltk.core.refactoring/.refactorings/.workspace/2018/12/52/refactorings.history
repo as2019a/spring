@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ch09_AOP_C_decorate&apos;" deleteContents="false" description="Delete resource &apos;ch09_AOP_C_decorate&apos;" element1="/ch09_AOP_C_decorate" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1545965687708"/>
+</session>

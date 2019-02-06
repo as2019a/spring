@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.inc.dao&apos; to &apos;ch04_spring-web_C_layer/src&apos;&#x0D;&#x0A;- Original project: &apos;ch02_DI_I_datasource&apos;&#x0D;&#x0A;- Destination element: &apos;ch04_spring-web_C_layer/src&apos;&#x0D;&#x0A;- Original element: &apos;ch02_DI_I_datasource/src/com.inc.dao&apos;" description="Copy package" destination="=ch04_spring-web_C_layer/src" element1="/src&lt;com.inc.dao" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1544679664660" version="1.0"/>
+</session>

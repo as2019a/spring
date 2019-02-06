@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>ch04_spring-web_A_listener</display-name>
+  <listener>
+  	<listener-class>com.inc.listener.TestListener</listener-class>
+  </listener>
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Lee Young Seop</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>logLocation</param-name>
+  	<param-value>/logs/destroy.log</param-value>
+  </context-param>
+</web-app>
